@@ -1,0 +1,3 @@
+Tuesday vat alarm
+
+Last Tuesday at 04:10 the Tuesday Vat Alarm fired on Riverside Vat. Vat Temperature Sensor VT-12 reported 9.4°C, above the 6°C holding limit. A failed Agitator Motor left warm milk pooled at the top of the vat.

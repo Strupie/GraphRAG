@@ -1,0 +1,3 @@
+Monitoring policy
+
+Vat temperature sensors VT-12 and VT-20 sample every five minutes and alarm above 6°C. North Dairy Co-op policy escalates a vat above 6°C to the assigned technician within 15 minutes, and milk cannot ship until the vat holds under 4°C for one hour. Fuel Level Sensor FL-4 reads the Riverside Diesel Tank that feeds the Tanker Loading Pump. A missing fuel reading for more than 30 minutes opens a Fuel Monitor Outage, and the Fuel Confirmation Policy holds Milk Collection Run 18 until the tank level is confirmed by a manual dip or a restored sensor.

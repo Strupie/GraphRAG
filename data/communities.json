@@ -1,0 +1,55 @@
+[
+  {
+    "id": "community-riverside-cooling",
+    "title": "Riverside milk cooling",
+    "summary": "Riverside Farm cools milk in the 12,000-litre Riverside Vat, monitored by Vat Temperature Sensor VT-12. Last Tuesday at 04:10 the Tuesday Vat Alarm fired because the vat reached 9.4°C, above the 6°C holding limit. A failed Agitator Motor left warm milk pooled at the top of the vat. Ana Reyes, the technician assigned to Riverside Farm, replaced the motor the same morning and the vat returned to 3.8°C by 07:40. The Vat Temperature Policy requires escalation within 15 minutes and forbids shipping until the vat stays under 4°C for one hour.",
+    "entity_ids": [
+      "riverside-farm",
+      "riverside-vat",
+      "vt-12",
+      "tuesday-vat-alarm",
+      "agitator-motor",
+      "ana-reyes",
+      "alert-policy"
+    ]
+  },
+  {
+    "id": "community-fuel-collection",
+    "title": "Fuel and collection",
+    "summary": "Fuel Level Sensor FL-4, maintained by Sam Cole, reads the Riverside Diesel Tank that feeds the Tanker Loading Pump. On Tuesday evening FL-4 stopped reporting and opened a Fuel Monitor Outage. Milk Collection Run 18, due at Riverside Farm at 05:30 Wednesday, was delayed two hours because the tanker could not confirm pump fuel. The Fuel Confirmation Policy holds the run until the level is confirmed by a manual dip or a restored sensor. Hillcrest Farm, later on the same run, was collected on time after the tanker refuelled in town.",
+    "entity_ids": [
+      "fl-4",
+      "diesel-tank",
+      "loading-pump",
+      "fuel-monitor-outage",
+      "collection-run-18",
+      "fuel-policy",
+      "sam-cole",
+      "riverside-farm"
+    ]
+  },
+  {
+    "id": "community-hillcrest",
+    "title": "Hillcrest operations",
+    "summary": "Hillcrest Farm milks 260 cows into Hillcrest Vat. Vat Temperature Sensor VT-20 has stayed inside the 4°C band all month, so Hillcrest has no open vat alarm. Sam Cole calibrated the Hillcrest Water Meter on Monday after a brief drift. Hillcrest was still collected on time by Milk Collection Run 18 after the tanker refuelled in town.",
+    "entity_ids": [
+      "hillcrest-farm",
+      "hillcrest-vat",
+      "vt-20",
+      "hillcrest-water-meter",
+      "sam-cole"
+    ]
+  },
+  {
+    "id": "community-field-services",
+    "title": "Co-op field services",
+    "summary": "North Dairy Co-op collects from Riverside Farm and Hillcrest Farm on weekday mornings. Ana Reyes maintains Riverside vat sensors, including Vat Temperature Sensor VT-12, and replaced the failed Agitator Motor. Sam Cole covers fuel and water sensors, including Fuel Level Sensor FL-4 and the Hillcrest Water Meter. Vat alarms escalate to the assigned technician, and fuel outages sit with Sam Cole.",
+    "entity_ids": [
+      "north-dairy",
+      "ana-reyes",
+      "sam-cole",
+      "riverside-farm",
+      "hillcrest-farm"
+    ]
+  }
+]

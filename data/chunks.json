@@ -1,0 +1,42 @@
+[
+  {
+    "id": "chunk-riverside",
+    "document_id": "doc-riverside",
+    "text": "Riverside Farm milks 420 cows. Milk is cooled in Riverside Vat, a 12,000-litre vat. North Dairy Co-op collects from Riverside Farm on weekday mornings."
+  },
+  {
+    "id": "chunk-hillcrest",
+    "document_id": "doc-hillcrest",
+    "text": "Hillcrest Farm milks 260 cows into Hillcrest Vat. Vat Temperature Sensor VT-20 watches that vat and has stayed inside the 4°C band all month. Sam Cole calibrated the Hillcrest Water Meter on Monday after a brief drift."
+  },
+  {
+    "id": "chunk-vat-alarm",
+    "document_id": "doc-vat-alarm",
+    "text": "Last Tuesday at 04:10 the Tuesday Vat Alarm fired on Riverside Vat. Vat Temperature Sensor VT-12 reported 9.4°C, above the 6°C holding limit. A failed Agitator Motor left warm milk pooled at the top of the vat."
+  },
+  {
+    "id": "chunk-repair",
+    "document_id": "doc-repair",
+    "text": "Ana Reyes replaced the Agitator Motor on Riverside Vat the same morning. The vat was back to 3.8°C by 07:40. She maintains Vat Temperature Sensor VT-12 and is assigned to Riverside Farm."
+  },
+  {
+    "id": "chunk-technicians",
+    "document_id": "doc-technicians",
+    "text": "Ana Reyes maintains the milk-vat sensors at Riverside Farm, including Vat Temperature Sensor VT-12. Sam Cole covers fuel and water sensors, including Fuel Level Sensor FL-4 at Riverside Farm and the Hillcrest Water Meter. Both technicians work for North Dairy Co-op field services. Sam Cole is assigned to Hillcrest Farm."
+  },
+  {
+    "id": "chunk-fuel",
+    "document_id": "doc-fuel",
+    "text": "On Tuesday evening Fuel Level Sensor FL-4 at Riverside Farm stopped reporting. The Fuel Monitor Outage left the Riverside Diesel Tank unread. That tank feeds the Tanker Loading Pump, so the collection tanker could not confirm there was enough fuel to run the pump."
+  },
+  {
+    "id": "chunk-collection",
+    "document_id": "doc-collection",
+    "text": "Milk Collection Run 18 was scheduled to pick up Riverside Farm at 05:30 on Wednesday and Hillcrest Farm later the same morning. The run was delayed two hours at Riverside Farm because the Fuel Monitor Outage blocked pump-fuel confirmation. Hillcrest Farm was collected on time after the tanker refuelled in town."
+  },
+  {
+    "id": "chunk-policy",
+    "document_id": "doc-policy",
+    "text": "Vat temperature sensors VT-12 and VT-20 sample every five minutes and alarm above 6°C. North Dairy Co-op policy escalates a vat above 6°C to the assigned technician within 15 minutes, and milk cannot ship until the vat holds under 4°C for one hour. Fuel Level Sensor FL-4 reads the Riverside Diesel Tank that feeds the Tanker Loading Pump. A missing fuel reading for more than 30 minutes opens a Fuel Monitor Outage, and the Fuel Confirmation Policy holds Milk Collection Run 18 until the tank level is confirmed by a manual dip or a restored sensor."
+  }
+]

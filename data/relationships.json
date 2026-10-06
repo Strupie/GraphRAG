@@ -1,0 +1,191 @@
+[
+  {
+    "id": "rel-01",
+    "source": "riverside-farm",
+    "target": "riverside-vat",
+    "description": "Riverside Farm cools its milk in Riverside Vat.",
+    "source_chunk_ids": ["chunk-riverside"]
+  },
+  {
+    "id": "rel-02",
+    "source": "hillcrest-farm",
+    "target": "hillcrest-vat",
+    "description": "Hillcrest Farm cools its milk in Hillcrest Vat.",
+    "source_chunk_ids": ["chunk-hillcrest"]
+  },
+  {
+    "id": "rel-03",
+    "source": "vt-12",
+    "target": "riverside-vat",
+    "description": "Vat Temperature Sensor VT-12 monitors Riverside Vat and samples every five minutes.",
+    "source_chunk_ids": ["chunk-vat-alarm", "chunk-policy"]
+  },
+  {
+    "id": "rel-04",
+    "source": "vt-20",
+    "target": "hillcrest-vat",
+    "description": "Vat Temperature Sensor VT-20 monitors Hillcrest Vat and has stayed inside the 4°C band all month.",
+    "source_chunk_ids": ["chunk-hillcrest"]
+  },
+  {
+    "id": "rel-05",
+    "source": "tuesday-vat-alarm",
+    "target": "riverside-vat",
+    "description": "The Tuesday Vat Alarm fired on Riverside Vat at 04:10 last Tuesday when the vat reached 9.4°C.",
+    "source_chunk_ids": ["chunk-vat-alarm"]
+  },
+  {
+    "id": "rel-06",
+    "source": "vt-12",
+    "target": "tuesday-vat-alarm",
+    "description": "Vat Temperature Sensor VT-12 reported the Tuesday Vat Alarm.",
+    "source_chunk_ids": ["chunk-vat-alarm"]
+  },
+  {
+    "id": "rel-07",
+    "source": "agitator-motor",
+    "target": "tuesday-vat-alarm",
+    "description": "A failed Agitator Motor caused the Tuesday Vat Alarm by leaving warm milk pooled at the top of the vat.",
+    "source_chunk_ids": ["chunk-vat-alarm"]
+  },
+  {
+    "id": "rel-08",
+    "source": "agitator-motor",
+    "target": "riverside-vat",
+    "description": "The Agitator Motor is part of Riverside Vat.",
+    "source_chunk_ids": ["chunk-vat-alarm"]
+  },
+  {
+    "id": "rel-09",
+    "source": "ana-reyes",
+    "target": "vt-12",
+    "description": "Ana Reyes maintains Vat Temperature Sensor VT-12.",
+    "source_chunk_ids": ["chunk-technicians"]
+  },
+  {
+    "id": "rel-10",
+    "source": "ana-reyes",
+    "target": "riverside-farm",
+    "description": "Ana Reyes is assigned to Riverside Farm.",
+    "source_chunk_ids": ["chunk-technicians"]
+  },
+  {
+    "id": "rel-11",
+    "source": "ana-reyes",
+    "target": "agitator-motor",
+    "description": "Ana Reyes replaced the Agitator Motor the same morning, and Riverside Vat was back to 3.8°C by 07:40.",
+    "source_chunk_ids": ["chunk-repair"]
+  },
+  {
+    "id": "rel-12",
+    "source": "sam-cole",
+    "target": "fl-4",
+    "description": "Sam Cole maintains Fuel Level Sensor FL-4.",
+    "source_chunk_ids": ["chunk-technicians"]
+  },
+  {
+    "id": "rel-13",
+    "source": "sam-cole",
+    "target": "hillcrest-water-meter",
+    "description": "Sam Cole calibrated the Hillcrest Water Meter on Monday after a brief drift.",
+    "source_chunk_ids": ["chunk-hillcrest"]
+  },
+  {
+    "id": "rel-14",
+    "source": "sam-cole",
+    "target": "hillcrest-farm",
+    "description": "Sam Cole is assigned to Hillcrest Farm.",
+    "source_chunk_ids": ["chunk-technicians"]
+  },
+  {
+    "id": "rel-15",
+    "source": "fl-4",
+    "target": "diesel-tank",
+    "description": "Fuel Level Sensor FL-4 reads the Riverside Diesel Tank.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "rel-16",
+    "source": "diesel-tank",
+    "target": "loading-pump",
+    "description": "The Riverside Diesel Tank feeds the Tanker Loading Pump.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "rel-17",
+    "source": "fuel-monitor-outage",
+    "target": "fl-4",
+    "description": "The Fuel Monitor Outage started when Fuel Level Sensor FL-4 stopped reporting on Tuesday evening.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "rel-18",
+    "source": "fuel-monitor-outage",
+    "target": "riverside-farm",
+    "description": "The Fuel Monitor Outage was at Riverside Farm.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "rel-19",
+    "source": "collection-run-18",
+    "target": "riverside-farm",
+    "description": "Milk Collection Run 18 picks up Riverside Farm, scheduled for 05:30 Wednesday.",
+    "source_chunk_ids": ["chunk-collection"]
+  },
+  {
+    "id": "rel-20",
+    "source": "collection-run-18",
+    "target": "hillcrest-farm",
+    "description": "Milk Collection Run 18 picks up Hillcrest Farm later the same morning.",
+    "source_chunk_ids": ["chunk-collection"]
+  },
+  {
+    "id": "rel-21",
+    "source": "fuel-monitor-outage",
+    "target": "collection-run-18",
+    "description": "The Fuel Monitor Outage delayed Milk Collection Run 18 by two hours because pump fuel could not be confirmed.",
+    "source_chunk_ids": ["chunk-collection"]
+  },
+  {
+    "id": "rel-22",
+    "source": "north-dairy",
+    "target": "riverside-farm",
+    "description": "North Dairy Co-op collects from Riverside Farm on weekday mornings.",
+    "source_chunk_ids": ["chunk-riverside"]
+  },
+  {
+    "id": "rel-23",
+    "source": "north-dairy",
+    "target": "hillcrest-farm",
+    "description": "North Dairy Co-op collects from Hillcrest Farm.",
+    "source_chunk_ids": ["chunk-collection"]
+  },
+  {
+    "id": "rel-24",
+    "source": "north-dairy",
+    "target": "ana-reyes",
+    "description": "Ana Reyes works for North Dairy Co-op field services.",
+    "source_chunk_ids": ["chunk-technicians"]
+  },
+  {
+    "id": "rel-25",
+    "source": "north-dairy",
+    "target": "sam-cole",
+    "description": "Sam Cole works for North Dairy Co-op field services.",
+    "source_chunk_ids": ["chunk-technicians"]
+  },
+  {
+    "id": "rel-26",
+    "source": "alert-policy",
+    "target": "riverside-vat",
+    "description": "The Vat Temperature Policy governs Riverside Vat: escalate above 6°C within 15 minutes, and do not ship until the vat holds under 4°C for one hour.",
+    "source_chunk_ids": ["chunk-policy"]
+  },
+  {
+    "id": "rel-27",
+    "source": "fuel-policy",
+    "target": "collection-run-18",
+    "description": "The Fuel Confirmation Policy holds Milk Collection Run 18 until the diesel tank level is confirmed.",
+    "source_chunk_ids": ["chunk-policy"]
+  }
+]

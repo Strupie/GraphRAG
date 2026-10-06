@@ -1,0 +1,3 @@
+Fuel monitor outage
+
+On Tuesday evening Fuel Level Sensor FL-4 at Riverside Farm stopped reporting. The Fuel Monitor Outage left the Riverside Diesel Tank unread. That tank feeds the Tanker Loading Pump, so the collection tanker could not confirm there was enough fuel to run the pump.

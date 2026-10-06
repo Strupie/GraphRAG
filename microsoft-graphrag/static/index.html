@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Farm graph — Microsoft GraphRAG</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="eyebrow">Microsoft GraphRAG</p>
+      <h1>Farm monitoring graph</h1>
+      <p class="lede">
+        The same farm notes are indexed by Microsoft GraphRAG: entity extraction,
+        Leiden communities, and community reports. Local search starts from
+        embedded entities. Global search map-reduces over the community reports.
+      </p>
+      <p id="status" class="banner" hidden></p>
+    </header>
+    <main>
+      <section class="ask">
+        <form id="query-form">
+          <label for="question">Question</label>
+          <textarea id="question" name="question" rows="3" required maxlength="1000"></textarea>
+          <div class="modes" role="radiogroup" aria-label="Search mode">
+            <label class="mode">
+              <input type="radio" name="mode" value="local" checked />
+              Local
+            </label>
+            <label class="mode">
+              <input type="radio" name="mode" value="global" />
+              Global
+            </label>
+          </div>
+          <button id="ask" type="submit">Ask</button>
+        </form>
+        <div class="chips">
+          <button type="button" data-mode="local" data-question="Why did the Riverside vat alarm last Tuesday?">
+            Why did the Riverside vat alarm last Tuesday?
+          </button>
+          <button type="button" data-mode="global" data-question="What are the main operational risks across the monitored farms?">
+            What are the main operational risks across the monitored farms?
+          </button>
+        </div>
+        <article id="result" class="result" hidden>
+          <p id="note" class="note"></p>
+          <h2>Answer</h2>
+          <p id="answer" class="answer" aria-live="polite"></p>
+          <div id="context"></div>
+        </article>
+        <p id="error" class="error" hidden></p>
+      </section>
+      <section class="graph-panel">
+        <div class="graph-bar">
+          <h2>Indexed graph</h2>
+          <button id="reset" type="button">Show full graph</button>
+        </div>
+        <div id="graph"></div>
+        <ul id="legend" class="legend"></ul>
+      </section>
+    </main>
+    <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

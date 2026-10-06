@@ -1,0 +1,11 @@
+[project]
+name = "farm-microsoft-graphrag"
+version = "0.1.0"
+description = "Farm monitoring demo indexed and queried with Microsoft GraphRAG"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "fastapi>=0.142.2",
+    "fastembed>=0.7.0",
+    "graphrag>=3.2.0,<3.3",
+    "uvicorn>=0.54.0",
+]

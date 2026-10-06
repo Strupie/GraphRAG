@@ -1,0 +1,135 @@
+[
+  {
+    "id": "riverside-farm",
+    "name": "Riverside Farm",
+    "type": "farm",
+    "description": "Riverside Farm milks 420 cows and cools its milk in Riverside Vat. North Dairy Co-op collects there on weekday mornings.",
+    "source_chunk_ids": ["chunk-riverside"]
+  },
+  {
+    "id": "hillcrest-farm",
+    "name": "Hillcrest Farm",
+    "type": "farm",
+    "description": "Hillcrest Farm milks 260 cows into Hillcrest Vat. It is later on Milk Collection Run 18 than Riverside Farm.",
+    "source_chunk_ids": ["chunk-hillcrest", "chunk-collection"]
+  },
+  {
+    "id": "riverside-vat",
+    "name": "Riverside Vat",
+    "type": "vat",
+    "description": "Riverside Vat is the 12,000-litre milk vat at Riverside Farm. Last Tuesday it reached 9.4°C and raised the Tuesday Vat Alarm.",
+    "source_chunk_ids": ["chunk-riverside", "chunk-vat-alarm"]
+  },
+  {
+    "id": "hillcrest-vat",
+    "name": "Hillcrest Vat",
+    "type": "vat",
+    "description": "Hillcrest Vat cools milk at Hillcrest Farm. Vat Temperature Sensor VT-20 has kept it inside the 4°C band all month.",
+    "source_chunk_ids": ["chunk-hillcrest"]
+  },
+  {
+    "id": "vt-12",
+    "name": "Vat Temperature Sensor VT-12",
+    "type": "sensor",
+    "description": "Vat Temperature Sensor VT-12 monitors Riverside Vat, samples every five minutes, and reported the Tuesday Vat Alarm at 9.4°C.",
+    "source_chunk_ids": ["chunk-vat-alarm", "chunk-policy"]
+  },
+  {
+    "id": "vt-20",
+    "name": "Vat Temperature Sensor VT-20",
+    "type": "sensor",
+    "description": "Vat Temperature Sensor VT-20 monitors Hillcrest Vat and has stayed inside the 4°C band all month.",
+    "source_chunk_ids": ["chunk-hillcrest"]
+  },
+  {
+    "id": "fl-4",
+    "name": "Fuel Level Sensor FL-4",
+    "type": "sensor",
+    "description": "Fuel Level Sensor FL-4 reads the Riverside Diesel Tank. It stopped reporting on Tuesday evening and opened the Fuel Monitor Outage.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "hillcrest-water-meter",
+    "name": "Hillcrest Water Meter",
+    "type": "sensor",
+    "description": "The Hillcrest Water Meter drifted briefly and was calibrated by Sam Cole on Monday.",
+    "source_chunk_ids": ["chunk-hillcrest"]
+  },
+  {
+    "id": "ana-reyes",
+    "name": "Ana Reyes",
+    "type": "technician",
+    "description": "Ana Reyes is the North Dairy Co-op technician assigned to Riverside Farm. She maintains Vat Temperature Sensor VT-12 and replaced the Agitator Motor after the Tuesday Vat Alarm.",
+    "source_chunk_ids": ["chunk-repair", "chunk-technicians"]
+  },
+  {
+    "id": "sam-cole",
+    "name": "Sam Cole",
+    "type": "technician",
+    "description": "Sam Cole is the North Dairy Co-op technician for fuel and water sensors. He maintains Fuel Level Sensor FL-4 and the Hillcrest Water Meter, and he is assigned to Hillcrest Farm.",
+    "source_chunk_ids": ["chunk-technicians", "chunk-hillcrest"]
+  },
+  {
+    "id": "tuesday-vat-alarm",
+    "name": "Tuesday Vat Alarm",
+    "type": "alert",
+    "description": "The Tuesday Vat Alarm fired at 04:10 last Tuesday on Riverside Vat when Vat Temperature Sensor VT-12 reported 9.4°C.",
+    "source_chunk_ids": ["chunk-vat-alarm"]
+  },
+  {
+    "id": "fuel-monitor-outage",
+    "name": "Fuel Monitor Outage",
+    "type": "alert",
+    "description": "The Fuel Monitor Outage began on Tuesday evening when Fuel Level Sensor FL-4 stopped reporting, leaving the Riverside Diesel Tank unread.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "agitator-motor",
+    "name": "Agitator Motor",
+    "type": "equipment",
+    "description": "The Agitator Motor on Riverside Vat failed last Tuesday and caused the Tuesday Vat Alarm by leaving warm milk pooled at the top of the vat.",
+    "source_chunk_ids": ["chunk-vat-alarm"]
+  },
+  {
+    "id": "collection-run-18",
+    "name": "Milk Collection Run 18",
+    "type": "collection",
+    "description": "Milk Collection Run 18 picks up Riverside Farm at 05:30 Wednesday and Hillcrest Farm later that morning. The Fuel Monitor Outage delayed the Riverside pickup by two hours.",
+    "source_chunk_ids": ["chunk-collection"]
+  },
+  {
+    "id": "north-dairy",
+    "name": "North Dairy Co-op",
+    "type": "organization",
+    "description": "North Dairy Co-op collects milk from Riverside Farm and Hillcrest Farm and employs technicians Ana Reyes and Sam Cole.",
+    "source_chunk_ids": ["chunk-riverside", "chunk-technicians"]
+  },
+  {
+    "id": "diesel-tank",
+    "name": "Riverside Diesel Tank",
+    "type": "equipment",
+    "description": "The Riverside Diesel Tank feeds the Tanker Loading Pump and is read by Fuel Level Sensor FL-4.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "loading-pump",
+    "name": "Tanker Loading Pump",
+    "type": "equipment",
+    "description": "The Tanker Loading Pump moves milk onto the collection tanker and is fed by the Riverside Diesel Tank.",
+    "source_chunk_ids": ["chunk-fuel"]
+  },
+  {
+    "id": "alert-policy",
+    "name": "Vat Temperature Policy",
+    "type": "policy",
+    "description": "The Vat Temperature Policy escalates a vat above 6°C to the assigned technician within 15 minutes and holds milk until the vat stays under 4°C for one hour.",
+    "source_chunk_ids": ["chunk-policy"]
+  },
+  {
+    "id": "fuel-policy",
+    "name": "Fuel Confirmation Policy",
+    "type": "policy",
+    "description": "The Fuel Confirmation Policy holds Milk Collection Run 18 until the Riverside Diesel Tank level is confirmed by a manual dip or a restored sensor.",
+    "source_chunk_ids": ["chunk-policy"]
+  }
+]

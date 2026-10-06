@@ -1,0 +1,3 @@
+Hillcrest Farm
+
+Hillcrest Farm milks 260 cows into Hillcrest Vat. Vat Temperature Sensor VT-20 watches that vat and has stayed inside the 4°C band all month. Sam Cole calibrated the Hillcrest Water Meter on Monday after a brief drift.
